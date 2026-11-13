@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!-- Daily backup at 13:00 (and once at login). Replace YOU with your macOS user name. -->
+<dict>
+  <key>Label</key><string>com.example.whatsapp-backup</string>
+  <key>ProgramArguments</key><array><string>/Users/YOU/.local/bin/whatsapp-backup.sh</string></array>
+  <key>StartCalendarInterval</key><dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>0</integer></dict>
+  <key>RunAtLoad</key><true/>
+  <key>StandardErrorPath</key><string>/Users/YOU/Backups/whatsapp-mcp/backup.err</string>
+</dict>
+</plist>
